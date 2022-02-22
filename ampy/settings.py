@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'ampy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dph5336n7vl0q',
-        'USER': 'iwvmolnrmotepj',
-        'PASSWORD': '002971c8a066c85bfe59a7bf37cf43026bbafb7f269c90ce46c6f46e2f992e19',
-        'HOST': 'ec2-3-230-238-86.compute-1.amazonaws.com',
+        'NAME': 'd48rkot8slcv6e',
+        'USER': 'vozrrfconqxazc',
+        'PASSWORD': '780fbb82eb5d1fb2cc13f81fac6a1c3eb561f4d17251fae1ad4a43bba527b14e',
+        'HOST': 'ec2-34-203-91-150.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
