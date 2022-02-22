@@ -22,7 +22,7 @@ class SoftSkills(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    image = models.ImageField()
+    image = RichTextField()
     brief = models.CharField(max_length=150)
     content = RichTextField()
 
