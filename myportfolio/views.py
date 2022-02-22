@@ -8,6 +8,7 @@ def home(request):
     personal = Personal.objects.first()
     skills = Skills.objects.all()
     exp = Experience.objects.all()
+    ss =SoftSkills.objects.all()
 
     form = ContactForm(request.POST or None)
     if request.method == "POST":
@@ -21,6 +22,7 @@ def home(request):
         'skills' : skills,
         'exp' : exp,
         'form' : form,
+        'ss' : ss,
     }
     return render(request, "index.html", context)
 
