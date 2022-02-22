@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Marvel:400,700");
+
+
+#info {
+  background-color:#15202B;
+  padding: 2rem 0;
+}
+
+.row {
+  width: 95%;
+  margin: 0 auto;
+  padding: 9px;
+  text-align:center;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: inline-block;
+  width: 400px;
+  padding: 2rem 1rem 5rem 1rem;
+  background-color: teal;
+  position: relative;
+  margin: 9px;
+}
+
+.card:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background-color: skyblue;
+  top: 0px;
+  right: 0px;
+  border-bottom: 20px solid #006767;
+  border-left: 20px solid #006767;
+  border-right: 20px solid yellow;
+  border-top: 20px solid yellow;
+  position: absolute;
+  filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+.card:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid #006767;
+  border-right: 40px solid #006767;
+  border-left: 40px solid yellow;
+  border-bottom: 40px solid yellow;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+  margin-right: 10%;
+}
+.card:nth-of-type(1) {
+}
+.card h2 {
+  color: snow;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card p {
+  color: snow;
+  font-size: 0.8rem;
+  line-height: 120%;
+}
