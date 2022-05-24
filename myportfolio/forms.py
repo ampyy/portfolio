@@ -14,7 +14,7 @@ class ContactForm(forms.ModelForm):
     }))
     msg = forms.CharField(widget=forms.Textarea(attrs={
         'class' : 'input-field',
-    }))
+    }), label="Your Message")
 
     class Meta:
         model = Contact

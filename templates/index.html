@@ -161,6 +161,12 @@
                         <p class="" style="	display: block;width: 100%;object-fit: cover;">{{ post.image | safe }}</p>
                     <div class="post-preview">
                         <h6 class="post-title">{{ post.title }}</h6>
+                        {% if post.github_link %}
+                        <a href="{{ post.github_link }}">Github</a>
+                        {% endif %}
+                        {% if post.website_link %}
+                        <a href="{{ post.github_link }}">Hosting Link</a>
+                        {% endif %}
                         <p class="post-intro">{{ post.brief | safe }}</p>
                         <a href="{% url 'post-detail' post.pk    %}">Know More</a>
                     </div>

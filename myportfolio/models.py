@@ -24,6 +24,8 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     image = RichTextField()
     brief = models.CharField(max_length=150)
+    github_link = models.CharField(max_length=200, blank=True, null=True)
+    website_link = models.CharField(max_length=200, blank=True, null=True)
     content = RichTextField()
 
 
